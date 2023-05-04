@@ -26,7 +26,9 @@ getCharacters(data => {
     
     
         <h2>${personaje.name}</h2>
+        <h3>${personaje.gender}</h3>
         <span>${personaje.status}</span>
+
     
          </article> 
          
