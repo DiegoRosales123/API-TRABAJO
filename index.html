@@ -4,33 +4,77 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="stylesindex.css">
-	<script src="indexjs.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Página Principal</title>
+    <link rel="stylesheet" href="assets/indexcss.css">
+	  <script src="js/indexjs.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </head>
 <body>
+  <style>
+    body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url("imagenes/rick\ y\ morty.jpg");
+    background-size: cover;
+    background-position: 50% 65%;
+  }
+  </style>
     <header>
-        <nav>
-          <ul>
-            <li><a href="RickAndMortyApi.html">Rick and Morty</a></li>
-            <li><a href="Clima.html">Clima</a></li>
-          </ul>
-        </nav>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary navbar bg-dark" data-bs-theme="dark">
+        <div class="container-fluid">
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="RickAndMortyApi.html">Rick and Morty</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Clima.html">Clima</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
       </header>
       <main>
-        <h2>Bienvenido/a</h2>
-        <p>Este es mi sitio web personal. Espero que encuentres lo que buscas.</p>
+        <h1>Bienvenido/a</h1>
       </main>
-      <div class="carousel">
-        <div class="carousel-container">
-          <img src="ruta-de-la-imagen1.jpg" alt="Descripción de la imagen 1">
-          <img src="ruta-de-la-imagen2.jpg" alt="Descripción de la imagen 2">
+      <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
         </div>
-        <div class="carousel-controls">
-          <button class="carousel-control prev">&#10094;</button>
-          <button class="carousel-control next">&#10095;</button>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <a href="RickAndMortyApi.html">
+            <img src="imagenes/rickymartin.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <br>
+              <h5>Rick y Morty API</h5>
+              <p>Nombre, estado, género y localización de los personajes de Rick y Morty </p>
+            </div>
+          </a>
+          </div>
+          <div class="carousel-item">
+            <a href="Clima.html">
+            <img src="imagenes/aaaaclimita.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <br>
+              <h5>Clima API</h5>
+              <p>Aquí puedes ver el clima de tu ciudad</p>
+            </div>
+          </a>
+          </div>
         </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
       </div>
       
 
