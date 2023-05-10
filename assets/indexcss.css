@@ -1,0 +1,21 @@
+
+  header {
+    background-color: transparent;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  
+
+  .carousel-item img {
+    max-width: 800px;
+    max-height: auto;
+    width: auto;
+    height: auto;
+    margin: auto;
+  }
+
+  main h1{
+    text-align: center;
+    color: white;
+  }
